@@ -25,9 +25,3 @@ It allows multiple clients to communicate with each other through a centralized 
 3. Messages are sent in JSON format.
 4. Server forwards messages to intended receiver.
 5. Multiple clients can communicate simultaneously.
-
-## ▶️ How to Run
-
-### Start Server
-
-### Start Client
