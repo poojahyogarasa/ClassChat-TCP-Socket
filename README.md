@@ -3,6 +3,7 @@
 ![Python](https://img.shields.io/badge/Python-3.x-blue)
 ![Protocol](https://img.shields.io/badge/Protocol-TCP-green)
 ![Networking](https://img.shields.io/badge/Concept-Socket%20Programming-orange)
+![Architecture](https://img.shields.io/badge/Architecture-Client--Server-red)
 ![Status](https://img.shields.io/badge/Type-Academic%20Project-purple)
 
 ---
@@ -10,7 +11,7 @@
 ## 📌 Overview
 
 ClassChat is a TCP-based multi-client chat application developed using Python.  
-It follows a **Client–Server architecture** and enables multiple users to communicate with each other in real-time through a centralized server.
+It follows a **Client–Server architecture** and enables multiple users to communicate in real-time through a centralized server.
 
 This project demonstrates practical implementation of:
 
@@ -23,17 +24,12 @@ This project demonstrates practical implementation of:
 ---
 
 ## 🏗 System Architecture
-## 🧠 How It Works
-1. Server starts and listens for connections.
-2. Clients connect to the server.
-3. Messages are sent in JSON format.
-4. Server forwards messages to intended receiver.
-5. Multiple clients can communicate simultaneously.
 
-- The **Server** acts as a central controller.
-- Clients connect via TCP sockets.
-- Messages are routed based on receiver information.
-- The server validates whether the receiver is online before forwarding.
+- The **Server** acts as the central controller.
+- Multiple **Clients** connect via TCP sockets.
+- Messages are structured using JSON.
+- The server validates receiver availability before forwarding messages.
+- Supports concurrent client connections using multithreading.
 
 ---
 
@@ -71,7 +67,6 @@ This project demonstrates practical implementation of:
   "text": "Hi Bob, do you know how TCP works?",
   "time": "23:13:54"
 }
-
 ````
 ---
 
